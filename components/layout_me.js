@@ -4,7 +4,7 @@ import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
-const name = 'Kinesiology Coto'
+const name = 'Carlos Coto'
 export const siteTitle = 'Bathus Kinesiology'
 
 export default function Layout({ children, home }) {
@@ -30,7 +30,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/manik.png"
+              src="/images/carlos.jpg"
               //className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/manik.png"
+                  src="/images/carlos.jpg"
                   //className={utilStyles.borderCircle}
                   height={108}
                   width={108}
@@ -68,8 +68,6 @@ export default function Layout({ children, home }) {
           </Link>
         </div>
       )}
-      <footer><p>This is The Footer</p><p>{' © '}{new Date().getFullYear()}</p></footer>
     </div>
-    
   )
 }
