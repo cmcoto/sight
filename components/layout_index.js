@@ -6,13 +6,16 @@ import Link from 'next/link'
 import Footer from './Footer'
 import Navbar from './Navbar'
 import { motion } from "framer-motion"
+import Welcome from './Welcome'
 import Sidebar from './Sidebar'
+
 
 const name = 'Kinesiology Coto'
 export const siteTitle = 'Kinesiology Coto'
 
 export default function Layout({ children, home }) {
   return (
+    
     <div className={styles.container}>
       <Head>
         <link rel="icon" href="/images/manik.png" />
@@ -28,22 +31,28 @@ export default function Layout({ children, home }) {
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+        </style>
+       
       </Head>
       <div>
-        <Sidebar />
+      <Sidebar /> 
+        
       </div>
+      
       <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
               src="/images/manik.png"
-              //className={utilStyles.borderCircle}
+              className={utilStyles.borderCircle}
               height={144}
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading4XL}>{name}</h1>
           </>
         ) : (
           <>
@@ -62,14 +71,16 @@ export default function Layout({ children, home }) {
               </motion.div>
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 className={utilStyles.heading2XL}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
             </h2>
           </>
         )}
+        <Welcome /> 
       </header>
+     
       <main>{children}</main>
       {!home && (
       <motion.div whileHover={{ scale: 1.2 }}  className={styles.backToHome} >
@@ -79,6 +90,7 @@ export default function Layout({ children, home }) {
       </motion.div>
       )}
       <Footer />
+      
     </div>
     
   )

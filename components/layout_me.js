@@ -3,17 +3,21 @@ import Image from 'next/image'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import Navbar from './Navbar'
+import Footer from './Footer'
+import { motion } from "framer-motion"
+import Sidebar from './Sidebar'
 
 const name = 'Carlos Coto'
-export const siteTitle = 'Bathus Kinesiology'
+export const siteTitle = 'Kinesiology Coto'
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/manik.png" />
         <meta
-          name="Bathus Kinesiology Practice"
+          name="Kinesiology Coto"
           content="Kinesiology Praxis Clinic of Carlos Coto"
         />
         <meta
@@ -25,12 +29,15 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
+      <div>
+        <Sidebar />
+      </div>
       <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
-              src="/images/carlos.jpg"
+              src="/images/manik.png"
               //className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -44,8 +51,8 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/carlos.jpg"
-                  //className={utilStyles.borderCircle}
+                  src="/images/manik.png"
+                  className={utilStyles.borderCircle}
                   height={108}
                   width={108}
                   alt={name}
@@ -62,12 +69,13 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
+      <motion.div whileHover={{ scale: 1.2 }} className={styles.backToHome} >
+        <Link href="/">
+          <a>← Back to home</a>
+        </Link>
+      </motion.div>
       )}
+      <Footer />
     </div>
   )
 }

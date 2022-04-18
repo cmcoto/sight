@@ -2,26 +2,123 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: 'Inconsolata', monospace ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+  /*background: #E4FFB7;*/
+  background: #dcff7d;
+
 }
 
 * {
   box-sizing: border-box;
 }
 
+.Welcome {
+  
+  padding: 0px 5px;
+}
+
+.Angebot {
+  
+  background-image: url("/images/carlos2.jpg");
+
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+
+ /* Create the parallax scrolling effect */
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+ 
+  /*background-size: cover;
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;*/
+  
+  text-align: center;
+  
+  
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('/images/carlos2.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.bigName {
+  
+  font-size: 200px;
+}
+
+.bottomPage {
+  padding-top: 60px;
+}
+
 a {
-  color: #0070f3;
+  /*color: #0070f3;*/
+  color: lightslategrey;
   text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  color: #1a0e69;
+  /*text-decoration: underline;*/
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+nav {
+  /*margin: 0px auto 80px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #690094;
+  /*background-color:lightblue;*/
+  
+}
+
+nav a {
+  margin-left: 12px;
+  
+}
+
+nav .logo {
+  margin-right: auto;
+  
+}
+
+.middlePage {
+  padding: 0px 5px;
+}
+
+.bottomPage {
+  padding: 0px 5px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
 }
