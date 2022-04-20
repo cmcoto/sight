@@ -79,7 +79,7 @@ export default function Home({ allPostsData }) {
           
         }}
         
-        style={{ originX: 0.3 }} ><strong>Deep</strong> describes what I do with: <strong>Kinesiology</strong>, <strong>Psychology</strong>, <strong>Hypnosis</strong>, <strong>Biomagnetism</strong>... for you:<strong>↓</strong></motion.p>
+        style={{ originX: 0.3 }} ><strong>You</strong> are capable of... <strong>Anything!</strong></motion.p>
         <div className={utilStyles.grid} data-scroll  data-scroll-speed="5">
         
         <motion.p
@@ -104,7 +104,7 @@ export default function Home({ allPostsData }) {
           
         }}
         
-        style={{ originX: 0.8 }} ><strong>Deep</strong> is the change obtained with: <strong>Kinesiology</strong>, <strong>Psychology</strong>, <strong>Hypnosis</strong>, <strong>Biomagnetism</strong>... in you:<strong>↓</strong></motion.p>
+        style={{ originX: 0.8 }} ><strong>Energy follows your mind!</strong></motion.p>
         <div className={utilStyles.grid} data-scroll  data-scroll-speed="5"></div>
 
         <motion.a animate={{boxShadow: "10px 10px 0 rgba(0, 0, 0, 0.2)"}} 
@@ -124,7 +124,9 @@ export default function Home({ allPostsData }) {
           <li>NLP</li>
           <li>Ericksonian Hypnosis</li> 
           <li>Biomagnetism by Dr. Goiz</li>
+          
         </p>
+        <strong>Welcome to my Blog!</strong>
         </motion.a>
         
         
