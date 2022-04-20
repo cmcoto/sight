@@ -42,6 +42,7 @@ export default function Home({ allPostsData }) {
           
         }}
         
+        git branch
         
         transition = {{
           delay: 0.5
