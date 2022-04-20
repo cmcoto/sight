@@ -10,8 +10,8 @@ import Welcome from './Welcome'
 import Sidebar from './Sidebar'
 
 
-const name = 'Kinesiology Coto'
-export const siteTitle = 'Kinesiology Coto'
+const name = 'Sight For Sore Eyes Blog'
+export const siteTitle = 'Sight For Sore Eyes Blog'
 
 export default function Layout({ children, home }) {
   return (
@@ -20,8 +20,8 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/images/manik.png" />
         <meta
-          name="Kinesiology Coto"
-          content="Kinesiology Praxis Clinic of Carlos Coto"
+          name="Sight For Sore Eyes Blog"
+          content="This is Sight For Sore Eyes Blog"
         />
         <meta
           property="og:image"

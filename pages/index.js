@@ -23,7 +23,7 @@ export default function Home({ allPostsData }) {
         <br />
         <div className="bigName">
           <div className="name-h1" data-scroll data-scroll-repeat data-scroll-call="toggleBackToTop" data-scroll-direction="horizontal" data-scroll-speed="4" data-scroll-position="top">
-            <hi>βαθύς</hi>
+            <h1>Sight For Sore Eyes</h1>
           </div>
         </div>
         <motion.h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">By Carlos Coto</motion.h2>
@@ -52,7 +52,7 @@ export default function Home({ allPostsData }) {
         
         whileInView= {{scale: [1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1]}}
         data-scroll-target="#Angebot"
-        ><strong>βαθύς (Bathus)</strong> is a Greek word that means: <strong>DEEP</strong>.
+        ><strong>The Art Of Living A Miningful Life</strong>.
         </motion.p>
         <br />
         <br />
