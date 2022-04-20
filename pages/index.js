@@ -26,7 +26,7 @@ export default function Home({ allPostsData }) {
             <h1>Sight For Sore Eyes</h1>
           </div>
         </div>
-        <motion.h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">By Carlos Coto</motion.h2>
+        <motion.h2 data-scroll data-scroll-direction="horizontal" data-scroll-speed="6">Blog</motion.h2>
         <br />
         <br />
         <br />

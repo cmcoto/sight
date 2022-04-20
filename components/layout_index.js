@@ -46,13 +46,13 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/manik.png"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              src="/images/sight_banner.jpg"
+              //className={utilStyles.borderCircle}
+              height={150}
+              width={810}
               alt={name}
             />
-            <h1 className={utilStyles.heading4XL}>{name}</h1>
+            {/*<h1 className={utilStyles.heading4XL}>{name}</h1>*/}
           </>
         ) : (
           <>
@@ -71,14 +71,14 @@ export default function Layout({ children, home }) {
               </motion.div>
               </a>
             </Link>
-            <h2 className={utilStyles.heading2XL}>
+           {/* <h2 className={utilStyles.heading2XL}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+        </h2>*/}
           </>
         )}
-        <Welcome /> 
+       {/* <Welcome />*/ }
       </header>
      
       <main>{children}</main>
