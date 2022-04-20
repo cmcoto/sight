@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/global.css'
 import styles from '../components/sidebar.css'
+import { ChakraProvider } from '@chakra-ui/react'
 
 
 
@@ -28,9 +29,11 @@ function MyApp({ Component, pageProps }) {
         <const Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" } />
         <main id= "page-wrap" className="main" data-scroll-container>
             
+        <ChakraProvider>
             <layout>
                 <Component {...pageProps} />
             </layout>
+        </ChakraProvider>
             
         </main>
     </div>
